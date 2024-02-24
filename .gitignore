@@ -18,6 +18,11 @@
 # 2) "How to fix intereceptors generation on `bin/magento setup:di:compile` in Magento ≥ 2.2 in Windows?":
 # https://mage2.pro/t/4702
 !/setup/src/Magento/Setup/Module/Di/Code/Reader/ClassesScanner.php
+# 2024-02-24 Dmitrii Fediuk https://upwork.com/fl/mage2pro
+# 1) "Adapt Magento to Windows": https://github.com/mage2pro/pwa-studio-2024-02-24-backend/issues/1
+# 2) "How to fix «Unable to apply data patch Magento\Theme\Setup\Patch\Data\RegisterThemes for module Magento_Theme»
+# in Magento ≥ 2.3.5 in Windows?" https://mage2.pro/t/6177
+!/vendor/magento/framework/Image/Adapter/Gd2.php
 # 2023-07-22 Dmitrii Fediuk https://upwork.com/fl/mage2pro
 # Today I noticed that `git add . && git commit -a -m refactoring && git push`
 # started to commit subfolders which are git repositories (for an unknown reason).
