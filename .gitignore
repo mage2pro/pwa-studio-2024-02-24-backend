@@ -22,6 +22,13 @@
 # 1) "Adapt Magento to Windows": https://github.com/mage2pro/pwa-studio-2024-02-24-backend/issues/1
 # 2) "How to fix catalog images in Magento ≥ 2.3.5 in Windows?" https://mage2.pro/t/6210
 !/vendor/magento/framework/Image/Adapter/Gd2.php
+# 2024-02-24 Dmitrii Fediuk https://upwork.com/fl/mage2pro
+# 1) "Adapt Magento to Windows": https://github.com/mage2pro/pwa-studio-2024-02-24-backend/issues/1
+# 2) "How to fix «file_put_contents(generated/metadata/primary|global|plugin-list.php):
+# failed to open stream: No such file or directory
+# in lib\internal\Magento\Framework\Interception\PluginListGenerator.php on line 414» in Magento 2.4-develop in Windows?"
+# https://mage2.pro/t/6178
+!/vendor/magento/framework/Interception/PluginListGenerator.php
 # 2023-07-22 Dmitrii Fediuk https://upwork.com/fl/mage2pro
 # Today I noticed that `git add . && git commit -a -m refactoring && git push`
 # started to commit subfolders which are git repositories (for an unknown reason).
