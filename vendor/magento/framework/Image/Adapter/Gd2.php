@@ -93,7 +93,10 @@ class Gd2 extends AbstractAdapter
     {
         $allowed_schemes = ['ftp', 'ftps', 'http', 'https'];
         $url = parse_url($filename);
-        if ($url && isset($url['scheme']) && !in_array($url['scheme'], $allowed_schemes)) {
+		# 2024-02-24 Dmitrii Fediuk https://upwork.com/fl/mage2pro
+		# 1) "Adapt Magento to Windows": https://github.com/mage2pro/pwa-studio-2024-02-24-backend/issues/1
+		# 2) "How to fix catalog images in Magento ≥ 2.3.5 in Windows?" https://mage2.pro/t/6210
+        if ($url && isset($url['scheme']) && !in_array($url['scheme'], $allowed_schemes) && !file_exists($filename)) {
             return false;
         }
 
