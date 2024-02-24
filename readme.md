@@ -1,0 +1,1 @@
+Magento 2.4.7-beta2 as the backend for Magento PWA Studio 13.3.0.
