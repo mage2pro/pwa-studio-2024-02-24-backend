@@ -14,6 +14,11 @@
 # 1) "Adapt Magento to Windows": https://github.com/mage2pro/pwa-studio-2024-02-24-backend/issues/1
 # 2) "How to adapt `pub/get.php` to Windows in Magento ≥ 2.4.2?": https://mage2.pro/t/6415
 !/pub/get.php
+# 2024-02-24 Dmitrii Fediuk https://upwork.com/fl/mage2pro
+# 1) "Adapt Magento to Windows": https://github.com/mage2pro/pwa-studio-2024-02-24-backend/issues/1
+# 2) "How to fix intereceptors generation on `bin/magento setup:di:compile` in Magento ≥ 2.2 in Windows?":
+# https://mage2.pro/t/4702
+!/setup/src/Magento/Setup/Module/Di/Code/Reader/ClassesScanner.php
 /update/
 /vendor/aws/aws-crt-php
 /vendor/magento/framework/Test
